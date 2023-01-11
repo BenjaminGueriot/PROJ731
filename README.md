@@ -15,6 +15,8 @@ Le sujet est porté sur les map-reduce. Dans celui-ci, nous allons analyser de l
 Pour ce faire, nous allons diviser le texte le nombre de mappers demandé par l'utilisateur.
 
 
+--
+
 Ensuie, chaque mapper réparti ses résultats dans un nombre de dictionnaire correspondant au nombre de reducers. 
 
 Cette séparation est réalisé par un shuffle qui consiste à répartir les données équitablement entre chaque reducer.
@@ -22,6 +24,8 @@ Cette séparation est réalisé par un shuffle qui consiste à répartir les don
 En effet, notre shuffle se base sur la fonction hashCode() de java. Cette fonction est optimisé donc nous ne perdrons pas beaucoup de performance et donc de temps.
 
 On réalise ensuite un calcul mathématique, nous faisons un modulo correspondant au nombre de reducers sur la valeur obtenue ci-dessus pour connaitre le reducer assigné.
+
+--
 
 
 Les reducers vont récupérer les dictionnaires de chaque mappers qui leurs corresponds pour les analyser. Cela consiste à fusionner tous les différents dictionnaires pour former un seul et unique dictionnaire contenant les même mots par reducer. 
