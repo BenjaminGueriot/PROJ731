@@ -17,7 +17,7 @@ Pour ce faire, nous allons diviser le texte le nombre de mappers demandé par l'
 
 --
 
-Ensuie, chaque mapper réparti ses résultats dans un nombre de dictionnaire correspondant au nombre de reducers. 
+Ensuite, chaque mapper réparti ses résultats dans un nombre de dictionnaire correspondant au nombre de reducers. 
 
 Cette séparation est réalisé par un shuffle qui consiste à répartir les données équitablement entre chaque reducer.
 
