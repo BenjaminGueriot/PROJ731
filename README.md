@@ -36,6 +36,8 @@ En ce qui concerne les difficultés rencontrés, nous avons dû prendre en consi
 
 En outre, nous avons dû réfléchir un moment pour réaliser la séparation du grand texte en plusieurs parties.
 
+--
+
 Pour conclure, ce projet nous aura permis de découvrir un nouveau moyen de calcul sur un gros nombre de données. Nous pouvons facilement remarquer la différence entre un parcours brut et un parcours type map-reduce.
 Exemple : 
   1 fichier de 500mo - > 27 secondes en brut
